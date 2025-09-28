@@ -29,10 +29,6 @@
 }
 
 .brand .btn {
-  vertical-align: middle;
-}
-
-.header-actions .btn {
   font-size: 14px;
   padding: 12px 24px;
   height: 48px;
@@ -41,6 +37,7 @@
   justify-content: center;
   white-space: nowrap;
   min-width: 120px;
+  vertical-align: middle;
 }
 
 /* Sidebar Navigation */
