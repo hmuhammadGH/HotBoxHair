@@ -1,0 +1,30 @@
+/* Header Navigation Styles - HotBoxHair Website */
+
+/* Header with Logo */
+.header-with-logo {
+  background: var(--bg);
+  border-bottom: 1px solid var(--accent);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-actions .btn {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* Responsive Styles for Header */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
