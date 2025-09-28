@@ -1,0 +1,67 @@
+/* Wix-Compatible Header Styles - HotBoxHair Website */
+
+/* Wix-Compatible Header */
+.wix-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--accent);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.wix-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wix-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.wix-brand {
+  flex-shrink: 0;
+}
+
+.wix-actions {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.wix-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: var(--transition-fast);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.wix-primary {
+  background: var(--pink);
+  color: var(--bg);
+}
+
+.wix-primary:hover {
+  background: #e6009a;
+  text-decoration: none;
+  color: var(--bg);
+}
+
+/* Responsive Styles for Wix Header */
+@media (max-width: 768px) {
+  .wix-header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
