@@ -11,14 +11,28 @@
 }
 
 .header-content {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.brand {
+  flex-shrink: 0;
+}
+
+.header-actions {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-actions .btn {
   font-size: 14px;
   padding: 10px 20px;
+  white-space: nowrap;
 }
 
 /* Sidebar Navigation */
