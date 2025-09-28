@@ -2,6 +2,58 @@
 
 /* Mobile First Approach */
 
+/* Navigation Responsive Styles */
+@media (max-width: 768px) {
+  /* Sidebar Navigation - Hide on mobile */
+  .sidebar-nav,
+  .sidebar-nav-menu {
+    display: none;
+  }
+  
+  /* Header with Logo - Stack on mobile */
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Floating Navigation - Stack vertically on mobile */
+  .floating-nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    border-radius: var(--radius-lg);
+  }
+  
+  .floating-nav-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  /* Minimal Navigation - Stack on mobile */
+  .minimal-nav {
+    position: relative;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 /* Small devices (phones, 576px and up) */
 @media (max-width: 576px) {
   .container {
