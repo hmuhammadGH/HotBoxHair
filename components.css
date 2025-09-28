@@ -24,6 +24,14 @@
   flex-shrink: 0;
 }
 
+.brand img {
+  vertical-align: middle;
+}
+
+.brand .btn {
+  vertical-align: middle;
+}
+
 .header-actions .btn {
   font-size: 14px;
   padding: 12px 24px;
