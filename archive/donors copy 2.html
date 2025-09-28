@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate – HotBoxHair™</title>
+  <style>
+    :root{
+      --pink:#FF00A8;
+      --ink:#111827;
+      --muted:#6B7280;
+      --bg:#ffffff;
+      --panel:#F9FAFB;
+      --accent:#E5E7EB;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.55;}
+    .wrap{max-width:960px;margin:auto;padding:24px;}
+    header{padding:24px 0 8px; text-align:center;}
+    header h1{margin:0;font-size:2rem;letter-spacing:.2px;}
+    header p.tag{margin:6px 0 0;color:var(--muted);}
+    .lead{font-size:1.125rem;margin:16px auto 0;max-width:780px;color:var(--ink);}
+    .grid{display:grid;gap:16px;}
+    @media (min-width:720px){ .grid.cols-2{grid-template-columns:1fr 1fr;} }
+    section{margin:28px 0;}
+    .card{background:var(--panel);border:1px solid var(--accent);border-radius:14px;padding:18px;}
+    h2{font-size:1.4rem;margin:0 0 10px;}
+    h3{font-size:1.1rem;margin:0 0 8px;}
+    p{margin:10px 0;}
+    ul{margin:10px 0 0 18px;}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+    .btn{display:inline-block;text-decoration:none;padding:12px 18px;border-radius:999px;border:2px solid var(--pink);font-weight:700;}
+    .btn.primary{background:var(--pink);color:#fff;}
+    .btn.ghost{color:var(--pink);background:transparent;}
+    .pill{display:inline-block;background:#fff;border:1px solid var(--accent);border-radius:999px;padding:8px 12px;margin:6px 6px 0 0;font-size:.95rem;}
+    .amounts{display:flex;flex-wrap:wrap;margin-top:8px;}
+    .legal{font-size:.9rem;color:var(--muted);}
+    .center{text-align:center;}
+    .note{font-size:.95rem;color:var(--muted);margin-top:6px;}
+    .brand{font-weight:800;}
+    .brand .b-pink{color:var(--pink);}
+    footer{margin:36px 0 16px;text-align:center;color:var(--muted);font-size:.9rem;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1 class="brand">Hot<b class="b-pink">B</b>oxHair™</h1>
+      <p class="tag">Confidence in every strand™</p>
+      <p class="lead">Empowering individuals experiencing hair loss from autoimmune conditions, medical treatments, or natural thinning with safe, breathable, <strong>hypoallergenic human-hair headbands</strong> that restore comfort, dignity, and confidence.</p>
+      <div class="cta-row center">
+        <a class="btn primary" href="https://hotboxhair.org/donate">Donate Now</a>
+        <a class="btn ghost" href="#ways">See Ways to Give</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="why">
+      <div class="card">
+        <h2 id="why">Why Your Support Matters</h2>
+        <p>Hair loss is more than a physical change — it can impact identity, self-esteem, and everyday confidence. Your gift helps fund culturally inclusive solutions and community programs so no one faces hair loss alone.</p>
+        <ul>
+          <li>Provide free or subsidized hairbands for kids, teens, and adults.</li>
+          <li>Partner with hospitals, schools, and nonprofits to reach families in need.</li>
+          <li>Expand healing-focused programs that build comfort and community.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ways" aria-labelledby="ways-to-give">
+      <h2 id="ways-to-give">Ways to Give</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>One-Time Donation</h3>
+          <p>Make an immediate difference with a single gift.</p>
+          <div class="amounts">
+            <a class="pill" href="https://hotboxhair.org/donate?amount=25">$25</a>
+            <a class="pill" href="https://hotboxhair.org/donate?amount=50">$50</a>
+            <a class="pill" href="https://hotboxhair.org/donate?amount=100">$100</a>
+            <a class="pill" href="https://hotboxhair.org/donate?amount=250">$250</a>
+            <a class="pill" href="https://hotboxhair.org/donate?amount=500">$500</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="https://hotboxhair.org/donate">Donate Now</a>
+          </div>
+          <p class="note">Examples of impact: $25 supplies materials for one child’s headband • $50 funds a complete adult hairband • $100 sponsors a family care kit.</p>
+        </div>
+
+        <div class="card">
+          <h3>Monthly Giving — The Confidence Circle</h3>
+          <p>Provide steady support year-round so we can plan ahead and serve more families.</p>
+          <div class="amounts">
+            <a class="pill" href="https://hotboxhair.org/donate/monthly?amount=15">$15/mo</a>
+            <a class="pill" href="https://hotboxhair.org/donate/monthly?amount=25">$25/mo</a>
+            <a class="pill" href="https://hotboxhair.org/donate/monthly?amount=50">$50/mo</a>
+            <a class="pill" href="https://hotboxhair.org/donate/monthly?amount=100">$100/mo</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="https://hotboxhair.org/donate/monthly">Give Monthly</a>
+            <a class="btn ghost" href="#payment-info">Payment & Tax Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="payment-info" aria-labelledby="payment">
+      <div class="card">
+        <h2 id="payment">Payment & Tax Information</h2>
+        <p><strong>HotBoxHair™, Inc.</strong> is a registered <strong>501(c)(3)</strong> nonprofit organization.</p>
+        <p><strong>EIN:</strong> <span>YOUR_EIN_HERE</span></p>
+        <p><strong>Accepted Payment Methods:</strong> Visa, MasterCard, American Express, Discover, PayPal, and secure bank transfer.</p>
+        <p class="legal">All donations are tax-deductible to the fullest extent allowed by law. You will receive an email receipt for your records. For employer matching gifts or in-kind donations, please contact <a href="mailto:hello@hotboxhair.org">hello@hotboxhair.org</a>.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://hotboxhair.org/donate">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="transparency">
+      <div class="card">
+        <h2 id="transparency">Transparency & Stewardship</h2>
+        <p>We honor every gift with care. Funds are directed toward program delivery, inclusive community partnerships, and subsidized hairbands for families in need. Annual summaries and impact updates are shared with our donor community.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> HotBoxHair™, Inc. • All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
