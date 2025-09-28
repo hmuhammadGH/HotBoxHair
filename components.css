@@ -41,12 +41,27 @@
   white-space: nowrap;
   min-width: 120px;
   vertical-align: middle;
+  /* Preserve base button styles */
+  border-radius: var(--radius-full);
+  border: 1px solid var(--pink);
+  background: #fff;
+  font-weight: var(--font-weight-extrabold);
+  color: #000;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  cursor: pointer;
 }
 
 .brand .btn.primary {
   background: var(--pink);
   color: #fff;
   border-color: var(--pink);
+}
+
+.brand .btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .brand .btn.primary:hover {
