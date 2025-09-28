@@ -1,0 +1,176 @@
+/* Responsive Styles - HotBoxHair Website */
+
+/* Mobile First Approach */
+
+/* Small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-grid,
+  .two,
+  .grid.cols-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .triptych {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .cta-row {
+    justify-content: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .two {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+  
+  .metrics {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: var(--container-max-width);
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+  
+  .metrics {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .two {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .triptych {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img.clean {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a, a:visited {
+    text-decoration: underline;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  
+  .btn {
+    border: 1px solid #000;
+    background: transparent;
+  }
+  
+  .card {
+    border: 1px solid #000;
+    background: transparent;
+  }
+  
+  .hero {
+    background: none;
+  }
+  
+  .nav {
+    display: none;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .btn:hover {
+    transform: none;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --ink: #ffffff;
+    --panel: #2a2a2a;
+    --accent: #404040;
+  }
+}

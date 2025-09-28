@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate – HotBoxHair™</title>
+  <meta name="description" content="Support HotBoxHair™ in empowering individuals experiencing hair loss with safe, breathable, hypoallergenic human-hair headbands." />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="../css/variables.css" as="style" />
+  <link rel="preload" href="../css/main.css" as="style" />
+  <link rel="preload" href="../css/components.css" as="style" />
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="../images/optimized/HotBoxHair_TM_Tight.png" style="width: 230px;" alt="HotBoxHair Logo" />
+     <div class="cta-row center">
+        <a class="btn primary" href="#donation-form">Donate Now</a>
+        <a class="btn ghost" href="#ways">See Ways to Give</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="why">
+      <div class="card">
+        <h2 class="tag">Confidence in every strand™</h2>
+        <p class="lead">Empowering individuals experiencing hair loss from autoimmune conditions, medical treatments, or natural thinning with safe, breathable, <strong>hypoallergenic human-hair headbands</strong> that restore comfort, dignity, and confidence.</p>  
+        <h2 id="why">Why Your Support Matters</h2>
+        <p>Hair loss is more than a physical change — it can impact identity, self-esteem, and everyday confidence. Your gift helps fund culturally inclusive solutions and community programs so no one faces hair loss alone.</p>
+        <ul class="list">
+          <li>Provide free or subsidized hairbands for kids, teens, and adults.</li>
+          <li>Partner with hospitals, schools, and nonprofits to reach families in need.</li>
+          <li>Expand healing-focused programs that build comfort and community.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ways" aria-labelledby="ways-to-give">
+      <h2 id="ways-to-give">Ways to Give</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>One-Time Donation</h3>
+          <p>Make an immediate difference with a single gift.</p>
+          <div class="amounts">
+            <a class="pill" href="#donation-form" data-amount="25">$25</a>
+            <a class="pill" href="#donation-form" data-amount="50">$50</a>
+            <a class="pill" href="#donation-form" data-amount="100">$100</a>
+            <a class="pill" href="#donation-form" data-amount="250">$250</a>
+            <a class="pill" href="#donation-form" data-amount="500">$500</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#donation-form">Donate Now</a>
+          </div>
+          <p class="note">Examples of impact: $25 supplies materials for one child's headband • $50 funds a complete adult hairband • $100 sponsors a family care kit.</p>
+        </div>
+
+        <div class="card">
+          <h3>Monthly Giving — The Confidence Circle</h3>
+          <p>Provide steady support year-round so we can plan ahead and serve more families.</p>
+          <div class="amounts">
+            <a class="pill" href="#donation-form" data-amount="15" data-recurring="true">$15/mo</a>
+            <a class="pill" href="#donation-form" data-amount="25" data-recurring="true">$25/mo</a>
+            <a class="pill" href="#donation-form" data-amount="50" data-recurring="true">$50/mo</a>
+            <a class="pill" href="#donation-form" data-amount="100" data-recurring="true">$100/mo</a>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="#donation-form">Give Monthly</a>
+            <a class="btn ghost" href="#payment-info">Payment & Tax Info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section id="donation-form" aria-labelledby="donate-form">
+      <div class="card">
+        <h2 id="donate-form">Make Your Donation</h2>
+        
+        <form id="donation-form" method="POST" action="#" onsubmit="return false;">
+          <!-- Donation Type -->
+          <div class="form-group">
+            <label class="form-label">Donation Type</label>
+            <div>
+              <label>
+                <input type="radio" name="donation-type" value="one-time" checked />
+                One-time donation
+              </label>
+              <label>
+                <input type="radio" name="donation-type" value="recurring" />
+                Monthly donation
+              </label>
+            </div>
+          </div>
+
+          <!-- Amount Selection -->
+          <div class="form-group">
+            <label class="form-label">Donation Amount</label>
+            <div class="amounts">
+              <label class="pill">
+                <input type="radio" name="amount" value="25" />
+                $25
+              </label>
+              <label class="pill">
+                <input type="radio" name="amount" value="50" />
+                $50
+              </label>
+              <label class="pill">
+                <input type="radio" name="amount" value="100" />
+                $100
+              </label>
+              <label class="pill">
+                <input type="radio" name="amount" value="250" />
+                $250
+              </label>
+              <label class="pill">
+                <input type="radio" name="amount" value="500" />
+                $500
+              </label>
+              <label class="pill">
+                <input type="radio" name="amount" value="custom" />
+                Custom
+              </label>
+            </div>
+            <input type="number" name="custom-amount" id="custom-amount" placeholder="Enter amount" style="display: none;" />
+          </div>
+
+          <!-- Donor Information -->
+          <div class="form-group">
+            <label for="donor-name" class="form-label">Full Name *</label>
+            <input type="text" id="donor-name" name="name" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label for="donor-email" class="form-label">Email Address *</label>
+            <input type="email" id="donor-email" name="email" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label for="donor-phone" class="form-label">Phone Number</label>
+            <input type="tel" id="donor-phone" name="phone" class="form-input" />
+          </div>
+
+          <!-- Payment Method -->
+          <div class="form-group">
+            <label class="form-label">Payment Method</label>
+            <div>
+              <label>
+                <input type="radio" name="payment-method" value="credit-card" checked />
+                Credit Card
+              </label>
+              <label>
+                <input type="radio" name="payment-method" value="paypal" />
+                PayPal
+              </label>
+              <label>
+                <input type="radio" name="payment-method" value="bank-transfer" />
+                Bank Transfer
+              </label>
+            </div>
+            <p id="payment-method-info" class="note">Enter your credit card information below.</p>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="cta-row">
+            <button type="submit" class="btn primary">Donate Now</button>
+          </div>
+        </form>
+
+        <!-- Error Messages -->
+        <div id="donation-errors" style="display: none;"></div>
+        
+        <!-- Success Message -->
+        <div id="donation-success" style="display: none;"></div>
+      </div>
+    </section>
+
+    <section id="payment-info" aria-labelledby="payment">
+      <div class="card">
+        <h2 id="payment">Payment & Tax Information</h2>
+        <p><strong>HotBoxHair™, Inc.</strong> is a registered <strong>501(c)(3)</strong> nonprofit organization.</p>
+        <p><strong>EIN:</strong> <span>YOUR_EIN_HERE</span></p>
+        <p><strong>Accepted Payment Methods:</strong> Visa, MasterCard, American Express, Discover, PayPal, and secure bank transfer.</p>
+        <p class="legal">All donations are tax-deductible to the fullest extent allowed by law. You will receive an email receipt for your records. For employer matching gifts or in-kind donations, please contact <a href="mailto:hello@hotboxhair.org">hello@hotboxhair.org</a>.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#donation-form">Donate Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="transparency">
+      <div class="card">
+        <h2 id="transparency">Transparency & Stewardship</h2>
+        <p>We honor every gift with care. Funds are directed toward program delivery, inclusive community partnerships, and subsidized hairbands for families in need. Annual summaries and impact updates are shared with our donor community.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span data-year></span> HotBoxHair™, Inc. • All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="../js/main.js"></script>
+  <script src="../js/donation.js"></script>
+</body>
+</html>
