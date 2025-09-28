@@ -1,0 +1,124 @@
+/* Clean Navigation Styles - HotBoxHair Website */
+
+/* Clean Header */
+.clean-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--accent);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-section {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 230px;
+  height: auto;
+}
+
+.donate-section {
+  flex-shrink: 0;
+}
+
+.donate-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--pink);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--pink);
+}
+
+.donate-btn:hover {
+  background: #e6009a;
+  border-color: #e6009a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 0, 168, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Clean Sidebar */
+.clean-sidebar {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 280px;
+  height: calc(100vh - 80px);
+  background: var(--panel);
+  border-right: 1px solid var(--accent);
+  padding: 24px;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: var(--accent);
+  color: var(--pink);
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.nav-icon {
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+.nav-text {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .clean-sidebar {
+    display: none;
+  }
+  
+  .header-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .donate-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
