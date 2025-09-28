@@ -17,48 +17,30 @@
   width: 100%;
 }
 
-/* Unique Header Brand Styles */
-.header-brand {
+.brand {
   display: flex;
   align-items: center;
   gap: 20px;
   flex-shrink: 0;
 }
 
-.header-logo {
+.brand img {
+  vertical-align: middle;
   width: 230px !important;
   height: auto !important;
-  display: inline-block !important;
-  vertical-align: middle;
   flex-shrink: 0;
 }
 
-.header-donate-btn {
+.brand .btn {
   font-size: 14px;
   padding: 12px 24px;
   height: 48px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
   min-width: 120px;
   vertical-align: middle;
-  background: var(--pink);
-  color: #fff;
-  border: 1px solid var(--pink);
-  border-radius: var(--radius-full);
-  text-decoration: none;
-  font-weight: var(--font-weight-extrabold);
-  transition: var(--transition-fast);
-  flex-shrink: 0;
-}
-
-.header-donate-btn:hover {
-  background: #e6009a;
-  border-color: #e6009a;
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
 }
 
 /* Sidebar Navigation */
