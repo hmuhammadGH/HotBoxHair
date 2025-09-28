@@ -11,10 +11,11 @@
 }
 
 .header-row {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 20px;
 }
 
 .logo-section {
@@ -28,19 +29,26 @@
 
 .donate-section {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .donate-btn {
   display: inline-block;
   padding: 12px 24px;
-  background: var(--pink);
-  color: #fff;
-  text-decoration: none;
+  background: var(--pink) !important;
+  color: #fff !important;
+  text-decoration: none !important;
   border-radius: 25px;
   font-weight: 600;
   font-size: 14px;
   transition: all 0.3s ease;
-  border: 2px solid var(--pink);
+  border: 2px solid var(--pink) !important;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 120px;
+  text-align: center;
 }
 
 .donate-btn:hover {
