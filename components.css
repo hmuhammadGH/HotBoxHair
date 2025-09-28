@@ -43,6 +43,17 @@
   vertical-align: middle;
 }
 
+.brand .btn.primary {
+  background: var(--pink);
+  color: #fff;
+  border-color: var(--pink);
+}
+
+.brand .btn.primary:hover {
+  background: #e6009a;
+  border-color: #e6009a;
+}
+
 /* Sidebar Navigation */
 .sidebar-nav {
   position: fixed;
