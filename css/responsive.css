@@ -10,10 +10,16 @@
     display: none;
   }
   
-  /* Header with Logo - Stack on mobile */
+  /* Header with Logo - Keep horizontal layout on mobile */
   .header-content {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-actions {
+    position: static;
+    transform: none;
   }
   
   /* Floating Navigation - Stack vertically on mobile */
