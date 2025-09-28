@@ -26,16 +26,16 @@
 
 .brand img {
   vertical-align: middle;
-  width: auto !important;
-  display: inline-block !important;
-  max-width: 230px;
+  width: 230px !important;
+  height: auto !important;
+  flex-shrink: 0;
 }
 
 .brand .btn {
   font-size: 14px;
   padding: 12px 24px;
   height: 48px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
