@@ -26,6 +26,9 @@
 
 .brand img {
   vertical-align: middle;
+  width: auto !important;
+  display: inline-block !important;
+  max-width: 230px;
 }
 
 .brand .btn {
